@@ -1,26 +1,102 @@
-/* CSS BY YOUR NAME */
+/* CSS BY Tracy Christenson */
+
 
 /* IMPORTED FONTS*/
+
+
 /* IMPORT "INTER" FROM GOOGLE FONTS"
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 /* CSS RESET */
+
+
 /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -28,31 +104,54 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
     list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
+
 /* ROOT VARIABLES */
+
 :root {
     --blue: #007BFF;
     --red: #FF4500;
@@ -62,19 +161,25 @@ table {
     --font: "Inter", sans-serif;
 }
 
+
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
+
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 
+
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
+
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
- {
+
+{
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
     height: 80vh;
     display: grid;
@@ -84,17 +189,20 @@ table {
     overflow: hidden;
 }
 
-/* ADD FLOATING SVG LOGO BEFORE THE H1 */
- {
-    content: "";
 
-    left:-.5rem;
+/* ADD FLOATING SVG LOGO BEFORE THE H1 */
+
+{
+    content: "";
+    left: -.5rem;
     width: 3.75rem;
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
-
 }
+
+
 /* THIS ONE IS DONE FOR YOU */
+
 #bar-chart {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -107,7 +215,10 @@ table {
     padding: 1rem;
     position: relative;
 }
+
+
 /* ADD ON TRANSITION ON HEIGHT */
+
 .bar {
     width: 50px;
     background: var(--charcoal);
@@ -116,7 +227,10 @@ table {
     transition: ;
     height: 0;
 }
+
+
 /* THIS ONE IS DONE FOR YOU */
+
 .bar::after {
     content: attr(data-year);
     position: absolute;
@@ -127,6 +241,7 @@ table {
     font-weight: bold;
     color: var(--white);
 }
+
 @keyframes stepUp {
     0% {
         height: 0;
@@ -135,27 +250,33 @@ table {
         height: var(--height);
     }
 }
+
+
 /* ADD ANIMATION ON stepUp for 1s ease-in-out forwards */
+
 .bar {
     animation: stepUp 1s ease-in-out forwards;
 }
 
 
-/* MEDIA QUERIES (MEDIUM) */ 
+/* MEDIA QUERIES (MEDIUM) */
 
-    #results {
-        grid-template-columns: 1fr 1fr;
-    }
-    .results-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .results-table {
-        width: 50%;
-    }
-    .bar-chart {
-        width: 50%;
-    }
+#results {
+    grid-template-columns: 1fr 1fr;
+}
+
+.results-container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.results-table {
+    width: 50%;
+}
+
+.bar-chart {
+    width: 50%;
+}
 
 
 /* MEDIA QUERIES (LARGE) */
