@@ -165,6 +165,11 @@ License: none (public domain)
         font-weight: bold;
         color: var(--blue);
     }
+    
+    nav ul li a {
+        font-weight: bold;
+        color: var(--blue);
+    }
     /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
     
     .container {
@@ -182,6 +187,12 @@ License: none (public domain)
         text-align: center;
         padding: 1rem;
         overflow: hidden;
+        color: var(--white);
+    }
+    
+    .button {
+        padding: 20px 50px;
+        background-color: var(--blue);
     }
     /* ADD FLOATING SVG LOGO BEFORE THE H1 */
     
