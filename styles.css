@@ -240,11 +240,10 @@ nav ul li a {
 }
 
 #services div ul {
-    column-count: 2;
+    column-count: 1;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
 }
 
 #services div ul li {
@@ -253,8 +252,9 @@ nav ul li a {
     border-radius: 10px;
     list-style-type: none;
     display: flex;
-    align-items: center;
     justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
     padding: auto;
 }
@@ -381,6 +381,10 @@ footer {
 
 .bar-chart {
     width: 50%;
+}
+
+#services div ul {
+    column-count: 2;
 }
 
 
