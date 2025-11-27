@@ -372,7 +372,7 @@ License: none (public domain)
     }
     /* ADD FLOATING SVG LOGO BEFORE THE H1 */
     
-    {
+    .logo {
         content: "";
         left: -.5rem;
         width: 3.75rem;
