@@ -206,10 +206,6 @@ License: none (public domain)
         height: 1px;
     }
     
-    nav ul li {
-        display: inline-block;
-    }
-    
     nav ul li a {
         display: block;
         font-weight: bold;
@@ -473,6 +469,21 @@ License: none (public domain)
         #services div ul {
             column-count: 2;
             height: 150px;
+        }
+        nav ul {
+            overflow: visible;
+            position: absolute;
+            top: 1.5rem;
+            left: .5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        nav li a {
+            display: inline-block;
+        }
+        label span,
+        input {
+            display: none;
         }
     }
     /* MEDIA QUERIES (LARGE) */
