@@ -165,18 +165,27 @@ License: none (public domain)
         font-weight: bold;
         color: var(--blue);
         font-size: 2em;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     
     h2 {
         font-size: 1.7em;
         color: var(--black);
         font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     
     h3 {
         font-size: 1.5em;
         color: var(--black);
         font-weight: bold;
+    }
+    
+    p {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     /* I used the Mobile Menu in Module 4 as the basis for the mobile hamburger menu. - TC */
     
@@ -218,8 +227,8 @@ License: none (public domain)
         display: inline-block;
         padding: 1.5rem;
         user-select: none;
-        right: 0;
         top: 0;
+        right: 0;
     }
     /* BUILDS THE MIDDLE LILNE OF THE HAMBURGER */
     
@@ -313,7 +322,8 @@ License: none (public domain)
         background-color: var(--blue);
         color: var(--white);
         border-radius: 10px;
-        margin: 20px;
+        margin: 20px auto;
+        font-weight: bold;
     }
     
     #about,
@@ -339,6 +349,10 @@ License: none (public domain)
         margin-top: 20px;
         margin-bottom: 20px;
         padding: auto;
+    }
+    
+    #services div ul li h3 {
+        color: var(--white);
     }
     
     #results {
