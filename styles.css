@@ -178,6 +178,7 @@ License: none (public domain)
         color: var(--black);
         font-weight: bold;
     }
+    /* I used the Mobile Menu in Module 4 as the basis for the mobile hamburger menu. - TC */
     
     nav ul {
         width: 100%;
@@ -187,6 +188,7 @@ License: none (public domain)
         overflow: hidden;
         text-align: center;
         max-height: 0;
+        float: right;
     }
     
     nav h2 {
@@ -304,6 +306,7 @@ License: none (public domain)
     
     .button {
         display: block;
+        width: 50%;
         padding: 20px 50px;
         background-color: var(--blue);
         color: var(--white);
@@ -374,6 +377,7 @@ License: none (public domain)
     
     .logo {
         content: "";
+        float: left;
         left: -.5rem;
         width: 3.75rem;
         height: 3.75rem;
