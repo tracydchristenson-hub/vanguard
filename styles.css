@@ -155,6 +155,7 @@ License: none (public domain)
     
     body {
         font-family: var(--font);
+        background-color: var(--white);
     }
     
     header {
@@ -165,16 +166,16 @@ License: none (public domain)
         font-weight: bold;
         color: var(--blue);
         font-size: 2em;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     
     h2 {
         font-size: 1.7em;
         color: var(--black);
         font-weight: bold;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     
     h3 {
@@ -233,7 +234,7 @@ License: none (public domain)
     /* BUILDS THE MIDDLE LILNE OF THE HAMBURGER */
     
     label span {
-        background-color: white;
+        background-color: var(--white);
         display: block;
         height: .25rem;
         position: relative;
@@ -244,7 +245,7 @@ License: none (public domain)
     
     label span:before,
     label span:after {
-        background: white;
+        background: var(--white);
         content: '';
         display: block;
         height: 100%;
