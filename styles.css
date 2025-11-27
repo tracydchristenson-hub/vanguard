@@ -188,7 +188,7 @@ License: none (public domain)
         overflow: hidden;
         text-align: center;
         max-height: 0;
-        float: right;
+        position: relative;
     }
     
     nav h2 {
@@ -218,6 +218,8 @@ License: none (public domain)
         display: inline-block;
         padding: 1.5rem;
         user-select: none;
+        right: 0;
+        top: 0;
     }
     /* BUILDS THE MIDDLE LILNE OF THE HAMBURGER */
     
