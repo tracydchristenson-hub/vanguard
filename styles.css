@@ -298,15 +298,17 @@ License: none (public domain)
         color: var(--white);
     }
     
-    #innovation h2 {
+    #innovation div h2 {
         color: var(--white);
     }
     
     .button {
+        display: block;
         padding: 20px 50px;
         background-color: var(--blue);
         color: var(--white);
         border-radius: 10px;
+        margin: 20px;
     }
     
     #about,
@@ -353,7 +355,7 @@ License: none (public domain)
         font-weight: bold;
     }
     
-    tr:nth-child(even) {
+    table tbody tr:nth-child(even) {
         background-color: var(--charcoal);
     }
     
