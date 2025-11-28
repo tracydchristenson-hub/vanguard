@@ -505,5 +505,8 @@ License: none (public domain)
                         #services div ul {
                             column-count: 3;
                         }
+                        #contact form {
+                            column-count: 2;
+                        }
                     }
                     /* MEDIA QUERIES (LARGE) */
