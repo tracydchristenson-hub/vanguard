@@ -390,7 +390,7 @@ License: none (public domain)
                     
                     form input[type=text],
                     form textarea {
-                        background-color: var(--black);
+                        background-color: var(--white);
                         border: 2px solid var(--blue);
                         width: 100%;
                     }
