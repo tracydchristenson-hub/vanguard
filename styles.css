@@ -414,6 +414,7 @@ License: none (public domain)
                         color: var(--white);
                         text-align: center;
                         font-size: 0.75em;
+                        padding: 20px;
                     }
                     /* ADD FLOATING SVG LOGO BEFORE THE H1 */
                     
