@@ -453,11 +453,17 @@ License: none (public domain)
                     /* MEDIA QUERIES (MEDIUM) */
                     
                     @media all and (min-width: 800px) {
-                        nav label {
-                            visibility: hidden;
+                        nav label span,
+                        nav input {
+                            display: none;
                         }
                         nav ul {
-                            visibility: visible;
+                            overflow: visible;
+                            position: absolute;
+                            top: 1.5rem;
+                            left: .5rem;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr;
                         }
                         nav ul li {
                             display: inline-block;
