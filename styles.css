@@ -188,7 +188,7 @@ License: none (public domain)
                         margin-top: 20px;
                         margin-bottom: 20px;
                     }
-                    /* I used the Mobile Menu in Module 4 as the basis for the mobile hamburger menu. - TC */
+                    /* I used the Mobile Menu in Module 4 as the basis for the mobile hamburger menu, with some changes. - TC */
                     
                     nav ul {
                         width: 100%;
@@ -460,13 +460,11 @@ License: none (public domain)
                         nav ul {
                             overflow: visible;
                             position: absolute;
-                            top: 1.5rem;
-                            left: .5rem;
+                            top: 0;
+                            right: 0;
                             display: grid;
                             grid-template-columns: 1fr 1fr 1fr;
                             width: 75%;
-                            top: 0;
-                            right: 0;
                         }
                         nav ul li {
                             display: inline-block;
