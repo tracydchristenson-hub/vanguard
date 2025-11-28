@@ -391,6 +391,10 @@ License: none (public domain)
                         color: var(--white);
                     }
                     
+                    form label {
+                        padding: 10 px;
+                    }
+                    
                     form input[type=text],
                     form textarea {
                         background-color: var(--white);
