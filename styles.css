@@ -234,7 +234,7 @@ License: none (public domain)
                     }
                     /* BUILDS THE MIDDLE LILNE OF THE HAMBURGER */
                     
-                    label span {
+                    nav label span {
                         background-color: var(--white);
                         display: block;
                         height: .25rem;
@@ -244,8 +244,8 @@ License: none (public domain)
                     }
                     /* BUILDS THE TOP AND BOTTOM LINES OF THE HAMBURGER*/
                     
-                    label span:before,
-                    label span:after {
+                    nav label span:before,
+                    nav label span:after {
                         background: var(--white);
                         content: '';
                         display: block;
@@ -255,41 +255,41 @@ License: none (public domain)
                         width: 100%;
                     }
                     
-                    label span:before {
+                    nav label span:before {
                         top: .75rem;
                     }
                     
-                    label span:after {
+                    nav label span:after {
                         top: -.75rem;
                     }
                     
-                    input {
+                    nav input {
                         display: none;
                     }
                     /* ADDS HEIGHT THE NAV WHEN IT'S DROPPED DOWN */
                     
-                    input:checked~ul {
+                    nav input:checked~ul {
                         max-height: 500px;
                     }
                     /* MAKES THE MIDDLE LINE OF THE HAMBURGER DISAPPEAR */
                     
-                    input:checked~label span {
+                    nav input:checked~nav label span {
                         background: transparent;
                     }
                     /* ROTATES THE TOP LINE OF THE HAMBURGER INTO ONE SIDE OF THE X */
                     
-                    input:checked~label span:before {
+                    nav input:checked~nav label span:before {
                         transform: rotate(-45deg);
                     }
                     /* ROTATES THE BOTTOM LINE OF THE HAMBURGER INTO ONE SIDE OF THE X */
                     
-                    input:checked~label span:after {
+                    nav input:checked~nav label span:after {
                         transform: rotate(45deg);
                     }
                     /* LOCATION OF THE HAMBURGER */
                     
-                    input:checked~label:not(.steps) span:before,
-                    input:checked~label:not(.steps) span:after {
+                    nav input:checked~nav label:not(.steps) span:before,
+                    nav input:checked~nav label:not(.steps) span:after {
                         top: 0;
                     }
                     /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
@@ -382,6 +382,16 @@ License: none (public domain)
                     #contact {
                         background-color: var(--black);
                         color: var(--white);
+                    }
+                    
+                    #contact h2 {
+                        color: var(--white);
+                    }
+                    
+                    form input {
+                        background-color: var(--black);
+                        border: 2px solid var(--blue);
+                        width: 100%;
                     }
                     
                     footer {
