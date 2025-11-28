@@ -464,6 +464,9 @@ License: none (public domain)
                             left: .5rem;
                             display: grid;
                             grid-template-columns: 1fr 1fr 1fr;
+                            width: 75%;
+                            top: 0;
+                            right: 0;
                         }
                         nav ul li {
                             display: inline-block;
@@ -483,6 +486,8 @@ License: none (public domain)
                         }
                         #services div ul {
                             column-count: 2;
+                        }
+                        #services div ul li {
                             height: 150px;
                         }
                     }
