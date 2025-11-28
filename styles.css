@@ -382,6 +382,7 @@ License: none (public domain)
                     #contact {
                         background-color: var(--black);
                         color: var(--white);
+                        margin: 0px;
                     }
                     
                     #contact h2 {
@@ -399,7 +400,7 @@ License: none (public domain)
                         width: 100%;
                         background-color: var(--blue);
                         color: var(--white);
-                        border-radius: 10px;
+                        padding: 15px;
                         margin: 20px auto;
                         font-weight: bold;
                         border-radius: 10px;
