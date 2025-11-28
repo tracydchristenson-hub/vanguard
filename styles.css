@@ -78,6 +78,7 @@ License: none (public domain)
                     embed,
                     figure,
                     figcaption,
+                    main,
                     footer,
                     header,
                     hgroup,
@@ -383,6 +384,7 @@ License: none (public domain)
                         background-color: var(--black);
                         color: var(--white);
                         margin: 0px;
+                        padding-bottom: 50px;
                     }
                     
                     #contact h2 {
