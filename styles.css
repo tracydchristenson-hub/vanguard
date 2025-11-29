@@ -162,6 +162,7 @@ License: none (public domain)
         header {
             background-color: var(--black);
             padding-top: 20px;
+            padding-left: 10px;
         }
         
         h1 {
