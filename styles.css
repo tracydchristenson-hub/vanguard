@@ -411,6 +411,7 @@ License: none (public domain)
                     form input[type=text],
                     form textarea {
                         display: inline-block;
+                        width: 100%;
                         background-color: var(--white);
                         border: 2px solid var(--blue);
                         width: 100%;
