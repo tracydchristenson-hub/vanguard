@@ -450,10 +450,11 @@ License: none (public domain)
                     }
                     
                     form input[type=submit] {
+                        height: 30px;
                         width: 100%;
                         background-color: var(--blue);
                         color: var(--white);
-                        padding: 15px;
+                        padding-top: 15px;
                         margin: 20px auto;
                         font-weight: bold;
                         border-radius: 10px;
@@ -463,7 +464,7 @@ License: none (public domain)
                     
                     form input[type=submit]:hover {
                         background-color: var(--red);
-                        height: 110%;
+                        height: 40px;
                     }
                     
                     footer {
