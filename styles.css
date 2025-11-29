@@ -195,10 +195,10 @@ License: none (public domain)
                     nav ul {
                         width: 100%;
                         margin: 0;
-                        padding: 0;
+                        padding-top: 10px;
                         list-style: none;
                         overflow: hidden;
-                        text-align: center;
+                        text-align: right;
                         max-height: 0;
                         position: relative;
                     }
@@ -329,6 +329,10 @@ License: none (public domain)
                         margin: 20px auto;
                         font-weight: bold;
                         text-align: center;
+                    }
+                    
+                    .button:hover {
+                        background-color: var(--red);
                     }
                     
                     #about,
