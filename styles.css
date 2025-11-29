@@ -382,6 +382,11 @@ License: none (public domain)
             height: 100px;
             margin-bottom: 20px;
             padding: auto;
+            transition: all 1s;
+        }
+        
+        #services div ul li:hover {
+            transform: translate(0px, -10px);
         }
         
         #services div ul li h3 {
