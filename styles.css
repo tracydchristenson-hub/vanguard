@@ -362,7 +362,8 @@ License: none (public domain)
                         color: var(--white);
                     }
                     
-                    #results div section h3 {
+                    #results div h2,
+                    #results div h3 {
                         color: var(--white);
                     }
                     
