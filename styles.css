@@ -536,13 +536,16 @@ License: none (public domain)
                             grid-template-columns: 1fr 1fr;
                         }
                         .results-container {
+                            display: flex;
                             flex-direction: row;
                             justify-content: space-between;
                         }
                         .results-table {
+                            display: flex;
                             flex: 0 1 50%;
                         }
                         .bar-chart {
+                            display: flex;
                             flex: 0 1 50%;
                         }
                         #services div ul {
