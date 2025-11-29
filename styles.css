@@ -329,10 +329,12 @@ License: none (public domain)
                         margin: 20px auto;
                         font-weight: bold;
                         text-align: center;
+                        transition: height 1s;
                     }
                     
                     .button:hover {
                         background-color: var(--red);
+                        height: 120%;
                     }
                     
                     #about,
@@ -455,6 +457,12 @@ License: none (public domain)
                         font-weight: bold;
                         border-radius: 10px;
                         cursor: pointer;
+                        transition: height 1s;
+                    }
+                    
+                    form input[type=submit]:hover {
+                        background-color: var(--red);
+                        height: 110%;
                     }
                     
                     footer {
@@ -547,6 +555,7 @@ License: none (public domain)
                             display: grid;
                             grid-template-columns: 1fr 1fr 1fr;
                             width: 50%;
+                            text-align: center;
                         }
                         nav ul li {
                             display: inline-block;
