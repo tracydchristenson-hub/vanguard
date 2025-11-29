@@ -421,8 +421,8 @@ License: none (public domain)
                         padding-bottom: 10px;
                     }
                     
-                    form input[type=text],
-                    form textarea {
+                    form label input[type=text],
+                    form label textarea {
                         display: block;
                         width: 100%;
                         background-color: var(--white);
@@ -431,7 +431,7 @@ License: none (public domain)
                         padding-bottom: 10px;
                     }
                     
-                    form input[type=submit] {
+                    input[type=submit] {
                         display: block;
                         width: 100%;
                         background-color: var(--blue);
