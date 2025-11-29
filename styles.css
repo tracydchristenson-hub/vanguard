@@ -362,6 +362,14 @@ License: none (public domain)
                         color: var(--white);
                     }
                     
+                    .results-table {
+                        width: 50%;
+                    }
+                    
+                    .bar-chart {
+                        width: 50%;
+                    }
+                    
                     table,
                     th,
                     td {
@@ -397,9 +405,11 @@ License: none (public domain)
                         border: 2px solid var(--blue);
                         width: 100%;
                         padding-bottom: 10px;
+                        display: inline-block;
                     }
                     
                     form input[type=submit] {
+                        display: inline-block;
                         width: 100%;
                         background-color: var(--blue);
                         color: var(--white);
@@ -416,6 +426,10 @@ License: none (public domain)
                         text-align: center;
                         font-size: 0.75em;
                         padding: 20px;
+                    }
+                    
+                    footer p a {
+                        color: var(--blue);
                     }
                     /* ADD FLOATING SVG LOGO BEFORE THE H1 */
                     
@@ -497,6 +511,7 @@ License: none (public domain)
                             display: inline-block;
                         }
                         #results {
+                            display: grid;
                             grid-template-columns: 1fr 1fr;
                         }
                         .results-container {
