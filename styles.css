@@ -359,6 +359,7 @@ License: none (public domain)
                     #results {
                         background-color: var(--blue);
                         color: var(--white);
+                        padding-bottom: 50px;
                     }
                     
                     #results div h2,
@@ -413,7 +414,6 @@ License: none (public domain)
                     }
                     
                     form input[type=submit] {
-                        display: inline-block;
                         width: 100%;
                         background-color: var(--blue);
                         color: var(--white);
@@ -430,6 +430,11 @@ License: none (public domain)
                         text-align: center;
                         font-size: 0.75em;
                         padding: 20px;
+                    }
+                    
+                    footer p {
+                        margin-top: 0px;
+                        margin-bottom: 5px;
                     }
                     
                     footer p a {
@@ -546,5 +551,8 @@ License: none (public domain)
                         }
                         #contact form {
                             column-count: 2;
+                        }
+                        form label {
+                            display: inline-block;
                         }
                     }
