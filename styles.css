@@ -321,6 +321,7 @@ License: none (public domain)
                     
                     .button {
                         display: block;
+                        height: 100px;
                         width: 25%;
                         padding: 20px;
                         background-color: var(--blue);
@@ -334,7 +335,7 @@ License: none (public domain)
                     
                     .button:hover {
                         background-color: var(--red);
-                        height: 120%;
+                        height: 120px;
                     }
                     
                     #about,
