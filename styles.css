@@ -395,7 +395,7 @@ License: none (public domain)
                         font-weight: bold;
                     }
                     
-                    table tbody tr:nth-child(even) {
+                    tbody tr:nth-child(even) {
                         background-color: var(--charcoal);
                     }
                     
