@@ -195,11 +195,11 @@ License: none (public domain)
         @keyframes fadeIn {
             0% {
                 opacity: 0;
-                top: 0px;
+                top: -10px;
             }
             100% {
                 opacity: 1;
-                top: 10px;
+                top: 0px;
             }
         }
         
@@ -340,6 +340,7 @@ License: none (public domain)
         .button {
             display: block;
             position: relative;
+            height: 50px;
             width: 25%;
             padding-top: 20px;
             background-color: var(--blue);
@@ -514,8 +515,7 @@ License: none (public domain)
         }
         /* ADD FLOATING SVG LOGO BEFORE THE H1 */
         
-        .logo,
-        svg {
+        .logo {
             position: relative;
             content: "";
             float: left;
@@ -528,13 +528,13 @@ License: none (public domain)
         
         @keyframes move {
             0% {
-                top: -5px;
-            }
-            50% {
                 top: 0px;
             }
-            100% {
+            50% {
                 top: 5px;
+            }
+            100% {
+                top: 10px;
             }
         }
         /* THIS ONE IS DONE FOR YOU */
