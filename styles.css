@@ -362,12 +362,16 @@ License: none (public domain)
                         color: var(--white);
                     }
                     
+                    #results div section h3 {
+                        color: var(--white);
+                    }
+                    
                     .results-table {
-                        width: 50%;
+                        width: 100%;
                     }
                     
                     .bar-chart {
-                        width: 50%;
+                        width: 100%;
                     }
                     
                     table,
