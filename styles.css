@@ -567,6 +567,7 @@ License: none (public domain)
                             column-count: 3;
                         }
                         #contact form {
-                            column-count: 2;
+                            display: grid;
+                            columns: auto auto;
                         }
                     }
