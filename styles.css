@@ -406,6 +406,7 @@ License: none (public domain)
                     
                     form input[type=text],
                     form textarea {
+                        display: inline-block;
                         background-color: var(--white);
                         border: 2px solid var(--blue);
                         width: 100%;
@@ -551,8 +552,5 @@ License: none (public domain)
                         }
                         #contact form {
                             column-count: 2;
-                        }
-                        form label {
-                            display: inline-block;
                         }
                     }
