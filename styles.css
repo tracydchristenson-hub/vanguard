@@ -544,6 +544,9 @@ License: none (public domain)
                             display: flex;
                             flex: 0 1 50%;
                         }
+                        .bar-chart h3 {
+                            display: block;
+                        }
                         #services div ul {
                             column-count: 2;
                         }
