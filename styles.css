@@ -343,20 +343,22 @@ License: none (public domain)
             display: block;
             height: 50px;
             width: 25%;
-            padding-top: 25px;
+            padding-top: 20px;
             background-color: var(--blue);
             color: var(--white);
             border-radius: 10px;
             margin: 20px auto;
             font-weight: bold;
+            font-size: 1.1em;
             text-align: center;
             transition: height 1s, width 1s;
+            animation: fadeIn 1s ease-in-out forwards;
         }
         
         .button:hover {
             background-color: var(--red);
             height: 60px;
-            width: 30%;
+            width: 10%;
             padding-top: 30px;
         }
         
