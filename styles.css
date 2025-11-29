@@ -381,11 +381,16 @@ License: none (public domain)
                         padding-bottom: 20px;
                     }
                     
-                    table,
-                    th,
-                    td {
+                    table {
                         background-color: var(--black);
                         color: var(--white);
+                        width: 100%;
+                        border: 1px solid var(--charcoal);
+                        text-align: center;
+                    }
+                    
+                    th,
+                    td {
                         border: 1px solid var(--charcoal);
                         text-align: center;
                         padding: 10px;
