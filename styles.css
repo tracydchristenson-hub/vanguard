@@ -191,11 +191,11 @@ License: none (public domain)
         @keyframes fadeIn {
             0% {
                 opacity: 0;
-                top: -10px;
+                top: 0px;
             }
             100% {
                 opacity: 1;
-                top: 0px;
+                top: 10px;
             }
         }
         
@@ -340,7 +340,7 @@ License: none (public domain)
         }
         
         .button {
-            display: flex;
+            display: block;
             height: 50px;
             width: 25%;
             padding-top: 25px;
@@ -350,7 +350,6 @@ License: none (public domain)
             margin: 20px auto;
             font-weight: bold;
             text-align: center;
-            align-items: center;
             transition: height 1s, width 1s;
         }
         
@@ -358,6 +357,7 @@ License: none (public domain)
             background-color: var(--red);
             height: 60px;
             width: 30%;
+            padding-top: 30px;
         }
         
         #about,
@@ -480,6 +480,7 @@ License: none (public domain)
             padding-top: 15px;
             margin: 20px auto;
             font-weight: bold;
+            font-size: 1.1em;
             border-radius: 10px;
             cursor: pointer;
             transition: height 1s, width 1s;
