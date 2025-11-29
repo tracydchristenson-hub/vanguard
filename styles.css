@@ -539,6 +539,9 @@ License: none (public domain)
                     /* MEDIA QUERIES (LARGE) */
                     
                     @media all and (min-width: 1024px) {
+                        nav ul {
+                            width: 25%;
+                        }
                         #services div ul {
                             column-count: 3;
                         }
