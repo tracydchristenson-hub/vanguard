@@ -295,8 +295,7 @@ License: none (public domain)
                     }
                     /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
                     
-                    .container,
-                    .results-container {
+                    .container {
                         width: 90%;
                         max-width: 1200px;
                         margin: 0 auto;
