@@ -533,10 +533,10 @@ License: none (public domain)
                             justify-content: space-between;
                         }
                         .results-table {
-                            width: 50%;
+                            flex: 0 1 50%;
                         }
                         .bar-chart {
-                            width: 50%;
+                            flex: 0 1 50%;
                         }
                         #services div ul {
                             column-count: 2;
