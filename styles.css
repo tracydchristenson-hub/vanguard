@@ -161,6 +161,7 @@ License: none (public domain)
                     
                     header {
                         background-color: var(--black);
+                        padding-top: 20px;
                     }
                     
                     h1 {
@@ -221,7 +222,8 @@ License: none (public domain)
                     
                     nav a:hover,
                     nav input:hover {
-                        background-color: var(--white);
+                        background-color: var(--blue);
+                        color: var(--black);
                     }
                     
                     nav label {
@@ -320,12 +322,13 @@ License: none (public domain)
                     .button {
                         display: block;
                         width: 25%;
-                        padding: 20px 50px;
+                        padding: 20px;
                         background-color: var(--blue);
                         color: var(--white);
                         border-radius: 10px;
                         margin: 20px auto;
                         font-weight: bold;
+                        text-align: center;
                     }
                     
                     #about,
