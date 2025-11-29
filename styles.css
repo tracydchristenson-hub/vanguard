@@ -518,6 +518,7 @@ License: none (public domain)
         
         .logo,
         svg {
+            position: relative;
             content: "";
             float: left;
             left: -.5rem;
