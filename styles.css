@@ -638,5 +638,6 @@ License: none (public domain)
             }
             #contact form {
                 column-count: 2;
+                white-space: nowrap;
             }
         }
