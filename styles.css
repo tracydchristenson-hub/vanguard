@@ -416,13 +416,14 @@ License: none (public domain)
                     }
                     
                     form label {
+                        display: block;
                         width: 100%;
                         padding-bottom: 10px;
                     }
                     
                     form input[type=text],
                     form textarea {
-                        display: inline-block;
+                        display: block;
                         width: 100%;
                         background-color: var(--white);
                         border: 2px solid var(--blue);
@@ -431,7 +432,7 @@ License: none (public domain)
                     }
                     
                     form input[type=submit] {
-                        display: inline-block;
+                        display: block;
                         width: 100%;
                         background-color: var(--blue);
                         color: var(--white);
