@@ -544,7 +544,7 @@ License: none (public domain)
                     
                     @media all and (min-width: 1024px) {
                         nav ul {
-                            width: 25%;
+                            width: 40%;
                         }
                         #services div ul {
                             column-count: 3;
