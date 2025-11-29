@@ -358,7 +358,7 @@ License: none (public domain)
         .button:hover {
             background-color: var(--red);
             height: 60px;
-            width: 110%;
+            width: 28%;
             padding-top: 30px;
         }
         
@@ -516,7 +516,8 @@ License: none (public domain)
         }
         /* ADD FLOATING SVG LOGO BEFORE THE H1 */
         
-        .logo {
+        .logo,
+        svg {
             content: "";
             float: left;
             left: -.5rem;
