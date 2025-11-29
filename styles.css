@@ -543,9 +543,11 @@ License: none (public domain)
                         }
                         .results-table {
                             flex: 0 1 50%;
+                            padding: 10px;
                         }
                         .bar-chart {
                             flex: 0 1 50%;
+                            padding: 10px;
                         }
                         #services div ul {
                             column-count: 2;
