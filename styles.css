@@ -358,7 +358,7 @@ License: none (public domain)
         .button:hover {
             background-color: var(--red);
             height: 60px;
-            width: 10%;
+            width: 110%;
             padding-top: 30px;
         }
         
