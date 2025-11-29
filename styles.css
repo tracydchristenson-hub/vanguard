@@ -531,10 +531,6 @@ License: none (public domain)
                         nav ul li {
                             display: inline-block;
                         }
-                        #results {
-                            display: grid;
-                            grid-template-columns: 1fr 1fr;
-                        }
                         .results-container {
                             display: flex;
                             flex-direction: row;
