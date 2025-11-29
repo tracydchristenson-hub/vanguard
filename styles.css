@@ -166,6 +166,7 @@ License: none (public domain)
         }
         
         h1 {
+            position: relative;
             font-weight: bold;
             color: var(--blue);
             font-size: 2em;
@@ -174,6 +175,7 @@ License: none (public domain)
         }
         
         h2 {
+            position: relative;
             font-size: 1.7em;
             color: var(--black);
             font-weight: bold;
@@ -183,6 +185,7 @@ License: none (public domain)
         }
         
         h3 {
+            position: relative;
             font-size: 1.5em;
             color: var(--black);
             font-weight: bold;
@@ -336,7 +339,7 @@ License: none (public domain)
         
         .button {
             display: block;
-            height: 50px;
+            position: relative;
             width: 25%;
             padding-top: 20px;
             background-color: var(--blue);
