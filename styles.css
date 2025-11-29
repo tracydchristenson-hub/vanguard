@@ -1,597 +1,634 @@
-                    /* CSS BY Tracy Christenson */
-                    /* IMPORTED FONTS*/
-                    /* IMPORT "INTER" FROM GOOGLE FONTS"
+        /* CSS BY Tracy Christenson */
+        /* IMPORTED FONTS*/
+        /* IMPORT "INTER" FROM GOOGLE FONTS"
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* CSS RESET */
-                    /* http://meyerweb.com/eric/tools/css/reset/
+        /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
 */
-                    
-                    html,
-                    body,
-                    div,
-                    span,
-                    applet,
-                    object,
-                    iframe,
-                    h1,
-                    h2,
-                    h3,
-                    h4,
-                    h5,
-                    h6,
-                    p,
-                    blockquote,
-                    pre,
-                    a,
-                    abbr,
-                    acronym,
-                    address,
-                    big,
-                    cite,
-                    code,
-                    del,
-                    dfn,
-                    em,
-                    img,
-                    ins,
-                    kbd,
-                    q,
-                    s,
-                    samp,
-                    small,
-                    strike,
-                    strong,
-                    sub,
-                    sup,
-                    tt,
-                    var,
-                    b,
-                    u,
-                    i,
-                    center,
-                    dl,
-                    dt,
-                    dd,
-                    ol,
-                    ul,
-                    li,
-                    fieldset,
-                    form,
-                    label,
-                    legend,
-                    table,
-                    caption,
-                    tbody,
-                    tfoot,
-                    thead,
-                    tr,
-                    th,
-                    td,
-                    article,
-                    aside,
-                    canvas,
-                    details,
-                    embed,
-                    figure,
-                    figcaption,
-                    main,
-                    footer,
-                    header,
-                    hgroup,
-                    menu,
-                    nav,
-                    output,
-                    ruby,
-                    section,
-                    summary,
-                    time,
-                    mark,
-                    audio,
-                    video {
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font-size: 100%;
-                        font: inherit;
-                        vertical-align: baseline;
-                    }
-                    /* HTML5 display-role reset for older browsers */
-                    
-                    article,
-                    aside,
-                    details,
-                    figcaption,
-                    figure,
-                    footer,
-                    header,
-                    hgroup,
-                    menu,
-                    nav,
-                    section {
-                        display: block;
-                    }
-                    
-                    body {
-                        line-height: 1;
-                    }
-                    
-                    ol,
-                    ul {
-                        list-style: none;
-                    }
-                    
-                    blockquote,
-                    q {
-                        quotes: none;
-                    }
-                    
-                    blockquote:before,
-                    blockquote:after,
-                    q:before,
-                    q:after {
-                        content: '';
-                        content: none;
-                    }
-                    
-                    table {
-                        border-collapse: collapse;
-                        border-spacing: 0;
-                    }
-                    /* ROOT VARIABLES */
-                    
-                     :root {
-                        --blue: #007BFF;
-                        --red: #FF4500;
-                        --white: #EAEAEA;
-                        --black: #000000;
-                        --charcoal: #333333;
-                        --font: "Inter", sans-serif;
-                    }
-                    /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
-                    /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
-                    
-                    body {
-                        font-family: var(--font);
-                        background-color: var(--white);
-                    }
-                    
-                    header {
-                        background-color: var(--black);
-                        padding-top: 20px;
-                    }
-                    
-                    h1 {
-                        font-weight: bold;
-                        color: var(--blue);
-                        font-size: 2em;
-                        padding-top: 20px;
-                        padding-bottom: 20px;
-                    }
-                    
-                    h2 {
-                        font-size: 1.7em;
-                        color: var(--black);
-                        font-weight: bold;
-                        padding-top: 20px;
-                        padding-bottom: 20px;
-                    }
-                    
-                    h3 {
-                        font-size: 1.5em;
-                        color: var(--black);
-                        font-weight: bold;
-                    }
-                    
-                    p {
-                        margin-top: 20px;
-                        margin-bottom: 20px;
-                    }
-                    /* I used the Mobile Menu in Module 4 as the basis for the mobile hamburger menu, with some changes. - TC */
-                    
-                    nav ul {
-                        width: 100%;
-                        margin: 0;
-                        padding-top: 10px;
-                        list-style: none;
-                        overflow: hidden;
-                        text-align: right;
-                        max-height: 0;
-                        position: relative;
-                    }
-                    
-                    nav h2 {
-                        visibility: hidden;
-                        height: 1px;
-                    }
-                    
-                    nav ul li a {
-                        display: block;
-                        font-weight: bold;
-                        color: var(--blue);
-                        text-decoration: none;
-                        font-size: 1.5rem;
-                        padding: 1rem;
-                        text-transform: uppercase;
-                        font-weight: bold;
-                        transition: background-color .3s ease-in;
-                    }
-                    
-                    nav a:hover,
-                    nav input:hover {
-                        background-color: var(--blue);
-                        color: var(--black);
-                    }
-                    
-                    nav label {
-                        cursor: pointer;
-                        display: inline-block;
-                        padding: 1.5rem;
-                        user-select: none;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                    }
-                    /* BUILDS THE MIDDLE LILNE OF THE HAMBURGER */
-                    
-                    nav label span {
-                        background-color: var(--white);
-                        display: block;
-                        height: .25rem;
-                        position: relative;
-                        transition: background-color .3s ease-out;
-                        width: 2rem;
-                    }
-                    /* BUILDS THE TOP AND BOTTOM LINES OF THE HAMBURGER*/
-                    
-                    nav label span:before,
-                    nav label span:after {
-                        background: var(--white);
-                        content: '';
-                        display: block;
-                        height: 100%;
-                        position: absolute;
-                        transition: all .2s ease-out;
-                        width: 100%;
-                    }
-                    
-                    nav label span:before {
-                        top: .75rem;
-                    }
-                    
-                    nav label span:after {
-                        top: -.75rem;
-                    }
-                    
-                    nav input {
-                        display: none;
-                    }
-                    /* ADDS HEIGHT THE NAV WHEN IT'S DROPPED DOWN */
-                    
-                    nav input:checked~ul {
-                        max-height: 500px;
-                    }
-                    /* MAKES THE MIDDLE LINE OF THE HAMBURGER DISAPPEAR */
-                    
-                    nav input:checked~nav label span {
-                        background: transparent;
-                    }
-                    /* ROTATES THE TOP LINE OF THE HAMBURGER INTO ONE SIDE OF THE X */
-                    
-                    nav input:checked~nav label span:before {
-                        transform: rotate(-45deg);
-                    }
-                    /* ROTATES THE BOTTOM LINE OF THE HAMBURGER INTO ONE SIDE OF THE X */
-                    
-                    nav input:checked~nav label span:after {
-                        transform: rotate(45deg);
-                    }
-                    /* LOCATION OF THE HAMBURGER */
-                    
-                    nav input:checked~nav label:not(.steps) span:before,
-                    nav input:checked~nav label:not(.steps) span:after {
-                        top: 0;
-                    }
-                    /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
-                    
-                    .container {
-                        width: 90%;
-                        max-width: 1200px;
-                        margin: 0 auto;
-                    }
-                    /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
-                    
-                    #innovation {
-                        background: linear-gradient(to bottom, rgba(0, 123, 255, 0.75), rgba(0, 0, 0, 0) 90%), url('images/vanguard-hero.jpg') no-repeat center center/cover;
-                        height: 80vh;
-                        display: grid;
-                        place-items: center;
-                        text-align: center;
-                        padding: 1rem;
-                        overflow: hidden;
-                        color: var(--white);
-                    }
-                    
-                    #innovation div h2 {
-                        color: var(--white);
-                    }
-                    
-                    .button {
-                        display: block;
-                        height: 50px;
-                        width: 25%;
-                        padding-top: 25px;
-                        background-color: var(--blue);
-                        color: var(--white);
-                        border-radius: 10px;
-                        margin: 20px auto;
-                        font-weight: bold;
-                        text-align: center;
-                        transition: height 1s;
-                    }
-                    
-                    .button:hover {
-                        background-color: var(--red);
-                        height: 60px;
-                    }
-                    
-                    #about,
-                    #services {
-                        background-color: var(--white);
-                        color: var(--black);
-                    }
-                    
-                    #services div ul {
-                        width: 90%;
-                        margin-left: auto;
-                        margin-right: auto;
-                    }
-                    
-                    #services div ul li {
-                        background-color: var(--blue);
-                        color: var(--white);
-                        border-radius: 10px;
-                        list-style-type: none;
-                        justify-content: center;
-                        padding: 20px;
-                        height: 100px;
-                        margin-bottom: 20px;
-                        padding: auto;
-                    }
-                    
-                    #services div ul li h3 {
-                        color: var(--white);
-                    }
-                    
-                    #results {
-                        background-color: var(--blue);
-                        color: var(--white);
-                        padding-bottom: 50px;
-                    }
-                    
-                    #results div h2 {
-                        color: var(--white);
-                    }
-                    
-                    #results div h3 {
-                        color: var(--white);
-                        padding-bottom: 20px;
-                    }
-                    
-                    .results-table {
-                        width: 100%;
-                        padding-bottom: 20px;
-                    }
-                    
-                    .bar-chart {
-                        width: 100%;
-                        padding-bottom: 20px;
-                    }
-                    
-                    table {
-                        background-color: var(--black);
-                        color: var(--white);
-                        width: 100%;
-                        border: 1px solid var(--charcoal);
-                        text-align: center;
-                    }
-                    
-                    th,
-                    td {
-                        border: 1px solid var(--charcoal);
-                        text-align: center;
-                        padding: 10px;
-                    }
-                    
-                    th {
-                        font-weight: bold;
-                    }
-                    
-                    tbody tr:nth-child(even) {
-                        background-color: var(--charcoal);
-                    }
-                    
-                    #contact {
-                        background-color: var(--black);
-                        color: var(--white);
-                        margin: 0px;
-                        padding-bottom: 50px;
-                    }
-                    
-                    #contact h2 {
-                        color: var(--white);
-                    }
-                    
-                    form label {
-                        display: block;
-                        width: 100%;
-                        padding-bottom: 10px;
-                    }
-                    
-                    form label input[type=text] {
-                        display: block;
-                        width: 100%;
-                        background-color: var(--white);
-                        border: 2px solid var(--blue);
-                        width: 100%;
-                        padding-bottom: 10px;
-                    }
-                    
-                    form label textarea {
-                        display: block;
-                        width: 100%;
-                        background-color: var(--white);
-                        border: 2px solid var(--blue);
-                        width: 100%;
-                        padding-bottom: 10px;
-                    }
-                    
-                    form input[type=submit] {
-                        height: 30px;
-                        width: 100%;
-                        background-color: var(--blue);
-                        color: var(--white);
-                        padding-top: 15px;
-                        margin: 20px auto;
-                        font-weight: bold;
-                        border-radius: 10px;
-                        cursor: pointer;
-                        transition: height 1s;
-                    }
-                    
-                    form input[type=submit]:hover {
-                        background-color: var(--red);
-                        height: 40px;
-                    }
-                    
-                    footer {
-                        background-color: var(--black);
-                        color: var(--white);
-                        text-align: center;
-                        padding: 20px;
-                    }
-                    
-                    footer p {
-                        margin-top: 0px;
-                        margin-bottom: 5px;
-                    }
-                    
-                    footer p a {
-                        color: var(--blue);
-                    }
-                    /* ADD FLOATING SVG LOGO BEFORE THE H1 */
-                    
-                    .logo {
-                        content: "";
-                        float: left;
-                        left: -.5rem;
-                        width: 3.75rem;
-                        height: 3.75rem;
-                        background: url('images/vanguard-logo.svg') no-repeat center/contain;
-                    }
-                    /* THIS ONE IS DONE FOR YOU */
-                    
-                    #bar-chart {
-                        display: grid;
-                        grid-template-columns: repeat(5, 1fr);
-                        align-items: flex-end;
-                        justify-content: space-around;
-                        gap: 1rem;
-                        height: 300px;
-                        width: 100%;
-                        max-width: 800px;
-                        padding: 1rem;
-                        position: relative;
-                    }
-                    /* ADD ON TRANSITION ON HEIGHT */
-                    
-                    .bar {
-                        width: 50px;
-                        background: var(--charcoal);
-                        border-radius: 10px;
-                        position: relative;
-                        transition: ;
-                        height: 0;
-                    }
-                    /* THIS ONE IS DONE FOR YOU */
-                    
-                    .bar::after {
-                        content: attr(data-year);
-                        position: absolute;
-                        bottom: -25px;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        font-size: 1rem;
-                        font-weight: bold;
-                        color: var(--white);
-                    }
-                    
-                    @keyframes stepUp {
-                        0% {
-                            height: 0;
-                        }
-                        100% {
-                            height: var(--height);
-                        }
-                    }
-                    /* ADD ANIMATION ON stepUp for 1s ease-in-out forwards */
-                    
-                    .bar {
-                        animation: stepUp 1s ease-in-out forwards;
-                    }
-                    /* MEDIA QUERIES (MEDIUM) */
-                    
-                    @media all and (min-width: 800px) {
-                        nav label span,
-                        nav input {
-                            display: none;
-                        }
-                        nav ul {
-                            overflow: visible;
-                            position: absolute;
-                            top: 0;
-                            right: 0;
-                            display: grid;
-                            grid-template-columns: 1fr 1fr 1fr;
-                            width: 50%;
-                            text-align: center;
-                        }
-                        nav ul li {
-                            display: inline-block;
-                        }
-                        .results-container {
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                        }
-                        .results-table {
-                            flex: 0 1 50%;
-                            padding: 10px;
-                        }
-                        .bar-chart {
-                            flex: 0 1 50%;
-                            padding: 10px;
-                        }
-                        #services div ul {
-                            column-count: 2;
-                        }
-                        #services div ul li {
-                            height: 150px;
-                        }
-                    }
-                    /* MEDIA QUERIES (LARGE) */
-                    
-                    @media all and (min-width: 1024px) {
-                        nav ul {
-                            width: 40%;
-                        }
-                        #services div ul {
-                            column-count: 3;
-                        }
-                        #contact form {
-                            column-count: 2;
-                        }
-                    }
+        
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        main,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+        
+        body {
+            line-height: 1;
+        }
+        
+        ol,
+        ul {
+            list-style: none;
+        }
+        
+        blockquote,
+        q {
+            quotes: none;
+        }
+        
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        /* ROOT VARIABLES */
+        
+         :root {
+            --blue: #007BFF;
+            --red: #FF4500;
+            --white: #EAEAEA;
+            --black: #000000;
+            --charcoal: #333333;
+            --font: "Inter", sans-serif;
+        }
+        /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
+        /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
+        
+        body {
+            font-family: var(--font);
+            background-color: var(--white);
+        }
+        
+        header {
+            background-color: var(--black);
+            padding-top: 20px;
+        }
+        
+        h1 {
+            font-weight: bold;
+            color: var(--blue);
+            font-size: 2em;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 1.7em;
+            color: var(--black);
+            font-weight: bold;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        
+        h3 {
+            font-size: 1.5em;
+            color: var(--black);
+            font-weight: bold;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                top: -10px;
+            }
+            100% {
+                opacity: 1;
+                top: 0px;
+            }
+        }
+        
+        p {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        /* I used the Mobile Menu in Module 4 as the basis for the mobile hamburger menu, with some changes. I wasn't quite sure how
+                    to cite that for giving credit for the concept. - TC */
+        
+        nav ul {
+            width: 100%;
+            margin: 0;
+            padding-top: 10px;
+            list-style: none;
+            overflow: hidden;
+            text-align: right;
+            max-height: 0;
+            position: relative;
+        }
+        
+        nav h2 {
+            visibility: hidden;
+            height: 1px;
+        }
+        
+        nav ul li a {
+            display: block;
+            font-weight: bold;
+            color: var(--blue);
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color .3s ease-in;
+        }
+        
+        nav a:hover,
+        nav input:hover {
+            background-color: var(--blue);
+            color: var(--black);
+        }
+        
+        nav label {
+            cursor: pointer;
+            display: inline-block;
+            padding: 1.5rem;
+            user-select: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        /* BUILDS THE MIDDLE LILNE OF THE HAMBURGER */
+        
+        nav label span {
+            background-color: var(--white);
+            display: block;
+            height: .25rem;
+            position: relative;
+            transition: background-color .3s ease-out;
+            width: 2rem;
+        }
+        /* BUILDS THE TOP AND BOTTOM LINES OF THE HAMBURGER*/
+        
+        nav label span:before,
+        nav label span:after {
+            background: var(--white);
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+        }
+        
+        nav label span:before {
+            top: .75rem;
+        }
+        
+        nav label span:after {
+            top: -.75rem;
+        }
+        
+        nav input {
+            display: none;
+        }
+        /* ADDS HEIGHT THE NAV WHEN IT'S DROPPED DOWN */
+        
+        nav input:checked~ul {
+            max-height: 500px;
+        }
+        /* MAKES THE MIDDLE LINE OF THE HAMBURGER DISAPPEAR */
+        
+        nav input:checked~nav label span {
+            background: transparent;
+        }
+        /* ROTATES THE TOP LINE OF THE HAMBURGER INTO ONE SIDE OF THE X */
+        
+        nav input:checked~nav label span:before {
+            transform: rotate(-45deg);
+        }
+        /* ROTATES THE BOTTOM LINE OF THE HAMBURGER INTO ONE SIDE OF THE X */
+        
+        nav input:checked~nav label span:after {
+            transform: rotate(45deg);
+        }
+        /* LOCATION OF THE HAMBURGER */
+        
+        nav input:checked~nav label:not(.steps) span:before,
+        nav input:checked~nav label:not(.steps) span:after {
+            top: 0;
+        }
+        /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
+        
+        #innovation {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, .75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
+            height: 80vh;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            padding: 1rem;
+            overflow: hidden;
+            color: var(--white);
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 0;
+            border-top: 10px;
+            border-style: solid;
+            border-image-source: linear-gradient(to bottom, rgba(0, 123, 255, 1), rgba(0, 0, 0, 0));
+        }
+        
+        #innovation div h2 {
+            color: var(--white);
+        }
+        
+        .button {
+            display: flex;
+            height: 50px;
+            width: 25%;
+            padding-top: 25px;
+            background-color: var(--blue);
+            color: var(--white);
+            border-radius: 10px;
+            margin: 20px auto;
+            font-weight: bold;
+            text-align: center;
+            align-items: center;
+            transition: height 1s, width 1s;
+        }
+        
+        .button:hover {
+            background-color: var(--red);
+            height: 60px;
+            width: 30%;
+        }
+        
+        #about,
+        #services {
+            background-color: var(--white);
+            color: var(--black);
+        }
+        
+        #services div ul {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #services div ul li {
+            background-color: var(--blue);
+            color: var(--white);
+            border-radius: 10px;
+            list-style-type: none;
+            justify-content: center;
+            padding: 20px;
+            height: 100px;
+            margin-bottom: 20px;
+            padding: auto;
+        }
+        
+        #services div ul li h3 {
+            color: var(--white);
+        }
+        
+        #results {
+            background-color: var(--blue);
+            color: var(--white);
+            padding-bottom: 50px;
+        }
+        
+        #results div h2 {
+            color: var(--white);
+        }
+        
+        #results div h3 {
+            color: var(--white);
+            padding-bottom: 20px;
+        }
+        
+        .results-table {
+            width: 100%;
+            padding-bottom: 20px;
+        }
+        
+        .bar-chart {
+            width: 100%;
+            padding-bottom: 20px;
+        }
+        
+        table {
+            background-color: var(--black);
+            color: var(--white);
+            width: 100%;
+            border: 1px solid var(--charcoal);
+            text-align: center;
+        }
+        
+        th,
+        td {
+            border: 1px solid var(--charcoal);
+            text-align: center;
+            padding: 10px;
+        }
+        
+        th {
+            font-weight: bold;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: var(--charcoal);
+        }
+        
+        #contact {
+            background-color: var(--black);
+            color: var(--white);
+            margin: 0px;
+            padding-bottom: 50px;
+        }
+        
+        #contact h2 {
+            color: var(--white);
+        }
+        
+        form label {
+            display: block;
+            width: 100%;
+            padding-bottom: 10px;
+        }
+        
+        form label input[type=text] {
+            display: block;
+            width: 100%;
+            background-color: var(--white);
+            border: 2px solid var(--blue);
+            width: 100%;
+            padding-bottom: 10px;
+        }
+        
+        form label textarea {
+            display: block;
+            width: 100%;
+            background-color: var(--white);
+            border: 2px solid var(--blue);
+            padding-bottom: 10px;
+        }
+        
+        form input[type=submit] {
+            display: flex;
+            align-items: center;
+            height: 50px;
+            width: 95%;
+            background-color: var(--blue);
+            color: var(--white);
+            padding-top: 15px;
+            margin: 20px auto;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: height 1s, width 1s;
+        }
+        
+        form input[type=submit]:hover {
+            background-color: var(--red);
+            height: 60px;
+            width: 100%;
+        }
+        
+        footer {
+            background-color: var(--black);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+        }
+        
+        footer p {
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+        
+        footer p a {
+            color: var(--blue);
+        }
+        /* ADD FLOATING SVG LOGO BEFORE THE H1 */
+        
+        .logo {
+            content: "";
+            float: left;
+            left: -.5rem;
+            width: 3.75rem;
+            height: 3.75rem;
+            background: url('images/vanguard-logo.svg') no-repeat center/contain;
+            animation: move 3s linear 2s infinite alternate;
+        }
+        
+        @keyframes move {
+            0% {
+                top: -5px;
+            }
+            50% {
+                top: 0px;
+            }
+            100% {
+                top: 5px;
+            }
+        }
+        /* THIS ONE IS DONE FOR YOU */
+        
+        #bar-chart {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            align-items: flex-end;
+            justify-content: space-around;
+            gap: 1rem;
+            height: 300px;
+            width: 100%;
+            max-width: 800px;
+            padding: 1rem;
+            position: relative;
+        }
+        /* ADD ON TRANSITION ON HEIGHT */
+        
+        .bar {
+            width: 50px;
+            background: var(--charcoal);
+            border-radius: 10px;
+            position: relative;
+            transition: height 1s;
+            height: 0;
+        }
+        /* THIS ONE IS DONE FOR YOU */
+        
+        .bar::after {
+            content: attr(data-year);
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1rem;
+            font-weight: bold;
+            color: var(--white);
+        }
+        
+        @keyframes stepUp {
+            0% {
+                height: 0;
+            }
+            100% {
+                height: var(--height);
+            }
+        }
+        /* ADD ANIMATION ON stepUp for 1s ease-in-out forwards */
+        
+        .bar {
+            animation: stepUp 1s ease-in-out forwards;
+        }
+        /* MEDIA QUERIES (MEDIUM) */
+        
+        @media all and (min-width: 800px) {
+            nav label span,
+            nav input {
+                display: none;
+            }
+            nav ul {
+                overflow: visible;
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                width: 50%;
+                text-align: center;
+            }
+            nav ul li {
+                display: inline-block;
+            }
+            .results-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .results-table {
+                flex: 0 1 50%;
+                padding: 10px;
+            }
+            .bar-chart {
+                flex: 0 1 50%;
+                padding: 10px;
+            }
+            #services div ul {
+                column-count: 2;
+            }
+            #services div ul li {
+                height: 150px;
+            }
+        }
+        /* MEDIA QUERIES (LARGE) */
+        
+        @media all and (min-width: 1024px) {
+            nav ul {
+                width: 40%;
+            }
+            #services div ul {
+                column-count: 3;
+            }
+            #contact form {
+                column-count: 2;
+            }
+        }
