@@ -222,10 +222,6 @@ p {
     margin-bottom: 20px;
 }
 
-
-/* I used the Mobile Menu in Module 4 as the basis for the mobile hamburger menu, with some changes. I wasn't quite sure how
-                    to cite that for giving credit for the concept. - TC */
-
 nav ul {
     width: 100%;
     margin: 0;
@@ -297,11 +293,11 @@ nav label span:after {
 }
 
 nav label span:before {
-    top: .75rem;
+    top: .5rem;
 }
 
 nav label span:after {
-    top: -.75rem;
+    top: -.5rem;
 }
 
 nav input {
@@ -327,7 +323,8 @@ nav input:checked~nav label span {
 
 nav input:checked~nav label:not(.steps) span:before,
 nav input:checked~nav label:not(.steps) span:after {
-    top: 0;
+    top: 20px;
+    right: 20px;
 }
 
 
