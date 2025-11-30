@@ -453,17 +453,19 @@ License: none (public domain)
             color: var(--white);
         }
         
+        .formField {
+            white-space: nowrap;
+        }
+        
         form label {
             display: block;
             width: 100%;
             padding-bottom: 10px;
-            white-space: nowrap;
         }
         
         form label input[type=text] {
             display: block;
             width: 100%;
-            height: 30px;
             background-color: var(--white);
             border: 2px solid var(--blue);
             padding-bottom: 10px;
@@ -639,6 +641,5 @@ License: none (public domain)
             }
             #contact form {
                 column-count: 2;
-                white-space: nowrap;
             }
         }
