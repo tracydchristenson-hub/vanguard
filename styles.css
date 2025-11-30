@@ -359,7 +359,7 @@ nav input:checked~nav label:not(.steps) span:after {
     display: block;
     position: relative;
     height: 50px;
-    width: 25%;
+    width: 35%;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -640,6 +640,9 @@ footer p a {
     }
     nav ul li {
         display: inline-block;
+    }
+    .button {
+        width: 25%;
     }
     .results-container {
         display: flex;
