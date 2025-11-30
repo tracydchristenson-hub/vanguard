@@ -489,6 +489,7 @@ tbody tr:nth-child(even) {
     display: inline-block;
     white-space: nowrap;
     width: 100;
+    padding: 10px;
 }
 
 form label {
