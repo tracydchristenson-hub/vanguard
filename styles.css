@@ -359,7 +359,7 @@ nav input:checked~nav label:not(.steps) span:after {
     display: block;
     position: relative;
     height: 50px;
-    width: 40%;
+    width: 35%;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
