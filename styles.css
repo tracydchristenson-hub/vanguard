@@ -179,6 +179,11 @@ header {
     padding-left: 50px;
 }
 
+#title {
+    position: relative;
+    float: left;
+}
+
 h1 {
     position: relative;
     font-weight: bold;
@@ -223,7 +228,7 @@ p {
 }
 
 nav ul {
-    width: 100%;
+    width: 50%;
     margin: 0;
     padding-top: 10px;
     list-style: none;
@@ -232,6 +237,7 @@ nav ul {
     max-height: 0;
     position: relative;
     top: -50px;
+    left: 50%;
 }
 
 nav h2 {
@@ -245,7 +251,7 @@ nav ul li a {
     color: var(--blue);
     text-decoration: none;
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 0.5rem;
     text-transform: uppercase;
     font-weight: bold;
     transition: background-color .3s ease-in;
@@ -685,4 +691,10 @@ footer p a {
         width: 100;
         padding: 10px;
     }
+}
+
+padding: 10px;
+
+}
+
 }
