@@ -486,8 +486,7 @@ tbody tr:nth-child(even) {
 }
 
 .formField {
-    display: inline-block;
-    white-space: nowrap;
+    display: block;
     width: 100;
     padding: 10px;
 }
@@ -690,5 +689,11 @@ footer p a {
     #contact form {
         display: grid;
         grid-template-columns: auto auto;
+    }
+    .formField {
+        display: inline-block;
+        white-space: nowrap;
+        width: 100;
+        padding: 10px;
     }
 }
