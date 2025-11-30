@@ -384,15 +384,13 @@ nav input:checked~nav label:not(.steps) span:after {
     font-weight: bold;
     font-size: 1.1em;
     text-align: center;
-    transition: height 1s, width 1s;
+    transition: all 0.5 ease-in-out;
     animation: fadeIn 1s ease-in-out forwards;
 }
 
 .button:hover {
     background-color: var(--red);
-    height: 55px;
-    width: 28%;
-    padding-top: 30px;
+    transform: scale(1.1);
 }
 
 #about,
@@ -527,13 +525,12 @@ form input[type=submit] {
     font-size: 1.1em;
     border-radius: 10px;
     cursor: pointer;
-    transition: height 1s, width 1s;
+    transition: all 0.5s ease-in-out;
 }
 
 form input[type=submit]:hover {
     background-color: var(--red);
-    height: 60px;
-    width: 100%;
+    transform: scale(1.1);
 }
 
 footer {
