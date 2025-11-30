@@ -503,7 +503,7 @@ form input[type=submit] {
     display: flex;
     align-items: center;
     height: 50px;
-    width: 95%;
+    width: 90%;
     background-color: var(--blue);
     color: var(--white);
     padding-top: 10px;
