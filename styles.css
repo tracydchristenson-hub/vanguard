@@ -272,7 +272,7 @@ nav label {
 nav label span {
     background-color: var(--white);
     display: block;
-    height: .25rem;
+    height: .2rem;
     position: relative;
     transition: background-color .3s ease-out;
     width: 2rem;
