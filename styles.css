@@ -308,7 +308,7 @@ nav input {
 /* ADDS HEIGHT THE NAV WHEN IT'S DROPPED DOWN */
 
 nav input:checked~ul {
-    max-height: 500px;
+    max-height: 400px;
 }
 
 
