@@ -186,6 +186,7 @@ h1 {
     font-size: 2em;
     padding-top: 20px;
     padding-bottom: 20px;
+    top: 50%;
 }
 
 h2 {
@@ -275,7 +276,7 @@ nav label span {
     height: .2rem;
     position: relative;
     transition: background-color .3s ease-out;
-    width: 1.5rem;
+    width: 1.75rem;
 }
 
 
