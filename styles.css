@@ -262,8 +262,8 @@ nav label {
     padding: 1.5rem;
     user-select: none;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 20px;
 }
 
 
@@ -275,7 +275,7 @@ nav label span {
     height: .2rem;
     position: relative;
     transition: background-color .3s ease-out;
-    width: 2rem;
+    width: 1.5rem;
 }
 
 
