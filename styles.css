@@ -186,7 +186,6 @@ h1 {
     font-size: 2em;
     padding-top: 20px;
     padding-bottom: 20px;
-    top: 50%;
 }
 
 h2 {
@@ -232,6 +231,7 @@ nav ul {
     text-align: right;
     max-height: 0;
     position: relative;
+    top: -50px;
 }
 
 nav h2 {
@@ -309,7 +309,7 @@ nav input {
 /* ADDS HEIGHT THE NAV WHEN IT'S DROPPED DOWN */
 
 nav input:checked~ul {
-    max-height: 400px;
+    max-height: 250px;
 }
 
 
