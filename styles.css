@@ -323,20 +323,6 @@ nav input:checked~nav label span {
 }
 
 
-/* ROTATES THE TOP LINE OF THE HAMBURGER INTO ONE SIDE OF THE X */
-
-nav input:checked~nav label span:before {
-    transform: rotate(-45deg);
-}
-
-
-/* ROTATES THE BOTTOM LINE OF THE HAMBURGER INTO ONE SIDE OF THE X */
-
-nav input:checked~nav label span:after {
-    transform: rotate(45deg);
-}
-
-
 /* LOCATION OF THE HAMBURGER */
 
 nav input:checked~nav label:not(.steps) span:before,
