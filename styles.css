@@ -274,7 +274,7 @@ nav label {
 }
 
 
-/* BUILDS THE MIDDLE LILNE OF THE HAMBURGER */
+/* Middle hamburger line */
 
 nav label span {
     background-color: var(--white);
@@ -286,7 +286,7 @@ nav label span {
 }
 
 
-/* BUILDS THE TOP AND BOTTOM LINES OF THE HAMBURGER*/
+/* Hamburger top and botom */
 
 nav label span:before,
 nav label span:after {
@@ -312,21 +312,14 @@ nav input {
 }
 
 
-/* ADDS HEIGHT THE NAV WHEN IT'S DROPPED DOWN */
+/* Height of nav dropdown */
 
 nav input:checked~ul {
     max-height: 250px;
 }
 
 
-/* MAKES THE MIDDLE LINE OF THE HAMBURGER DISAPPEAR */
-
-nav input:checked~nav label span {
-    background: transparent;
-}
-
-
-/* LOCATION OF THE HAMBURGER */
+/* Hamburger symbol location */
 
 nav input:checked~nav label:not(.steps) span:before,
 nav input:checked~nav label:not(.steps) span:after {
